@@ -6,6 +6,5 @@ packages:
 runcmd:
   - logger "runcmd started"
   - mkdir -p /data
-  - chown 
-  - docker run -d -v /data:/data -e SERVERADMIN_PASSWORD=${ADMIN_PASSWORD} -e TS3SERVER_LICENSE=accept -p 9987:9987/udp -p 10011:10011 -p 30033:30033 --name=ts3-server aheil/teamspeak3-server
+  - docker run -d -v /data:/var/ts3server/ -e SERVERADMIN_PASSWORD=${ADMIN_PASSWORD} -e TS3SERVER_LICENSE=accept -p 9987:9987/udp -p 10011:10011 -p 30033:30033 --name=ts3-server aheil/teamspeak3-server
   - logger "runcmd finished"
