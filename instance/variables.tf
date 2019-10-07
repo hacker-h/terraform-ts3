@@ -22,15 +22,4 @@ variable "SERVERNAME" {
   type = "string"
 }
 
-variable "CPANEL_USERNAME" {
-  type = "string"
-}
-
-variable "CPANEL_PASSWORD" {
-  type = "string"
-}
-
-variable "HOSTNAME" {
-  type = "string"
-}
 
