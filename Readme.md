@@ -8,6 +8,8 @@ For more information about how to setup a terraform remote state using IBM objec
 You can also configure the password for the teamspeak admin user within `terraform.tfvars`,
 all other variables can be overwritten within this file as well.
 
+Create an openstack keypair `my-keypair` with your SSH key.
+
 Initialize the project:
 ```
 terraform init --backend-config backend.tf
@@ -26,4 +28,29 @@ terraform destroy --auto-approve
 Get the server ip:
 ```
 terraform output ip
+```
+
+Get the server admin privilege token:
+```
+ssh -i ~/.ssh/YOUR_KEY ubuntu@$(terraform output ip) sudo docker logs ts3-server
+```
+You will see an output similar to the following:
+```
+...
+                      I M P O R T A N T
+------------------------------------------------------------------
+               Server Query Admin Account created
+         loginname= "serveradmin", password= "password"
+------------------------------------------------------------------
+
+
+------------------------------------------------------------------
+                      I M P O R T A N T
+------------------------------------------------------------------
+      ServerAdmin privilege key created, please use it to gain
+      serveradmin rights for your virtualserver. please
+      also check the doc/privilegekey_guide.txt for details.
+
+       token=Xhtly0OsfPbWUt0OuwvbANJrAlky4nKwLgGM2YAw
+------------------------------------------------------------------
 ```
