@@ -9,6 +9,6 @@ data "template_file" "userdata" {
   template = "${file("${path.module}/templates/userdata.yml")}"
 
   vars = {
-    ADMIN_PASSWORD = "${var.ADMIN_PASSWORD}"
+    #TODO add vars here
   }
 }

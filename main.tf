@@ -20,7 +20,6 @@ module "instance" {
   source         = "./instance"
   sec_id         = "${module.vpc.sec_id}"
   petname        = "${random_pet.pet.id}"
-  ADMIN_PASSWORD = "${var.ADMIN_PASSWORD}"
 }
 
 output "ip" {

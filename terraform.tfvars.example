@@ -10,4 +10,3 @@ auth_url = "https:/example.org:5000/v3"
 
 tenant_name = "my_tenant"
 
-ADMIN_PASSWORD = "teamspeak-password"
