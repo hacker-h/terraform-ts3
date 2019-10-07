@@ -1,0 +1,13 @@
+username = "myuser"
+
+password = "mypass"
+
+domain_name = "Default"
+
+project_id = "my_project_id"
+
+auth_url = "https:/example.org:5000/v3"
+
+tenant_name = "my_tenant"
+
+ADMIN_PASSWORD = "teamspeak-password"

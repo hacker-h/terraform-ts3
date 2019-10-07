@@ -1,6 +1,6 @@
 # Configure the OpenStack Provider
 provider "openstack" {
-  version          = "~> v1.12.0"
+  version          = "~> v1.19.0"
   user_name        = "${var.username}"
   domain_name      = "${var.domain_name}"
   tenant_name      = "${var.tenant_name}"
@@ -11,7 +11,7 @@ provider "openstack" {
 }
 
 module "vpc" {
-  source = "./vpc"
+  source  = "./vpc"
   petname = "${random_pet.pet.id}"
 }
 

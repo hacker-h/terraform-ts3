@@ -17,9 +17,3 @@ variable "ADMIN_PASSWORD" {
 variable "instance_name" {
   type = "string"
 }
-
-variable "SERVERNAME" {
-  type = "string"
-}
-
-
