@@ -10,16 +10,6 @@ variable "petname" {
   type = "string"
 }
 
-variable "ADMIN_PASSWORD" {
-  type = "string"
-}
-
 variable "instance_name" {
   type = "string"
 }
-
-variable "SERVERNAME" {
-  type = "string"
-}
-
-

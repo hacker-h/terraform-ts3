@@ -35,10 +35,6 @@ variable region {
   default = "Karlsruhe"
 }
 
-variable "ADMIN_PASSWORD" {
-  type = "string"
-}
-
 # remote state
 # see https://www.ibm.com/cloud/blog/store-terraform-states-cloud-object-storage
 
