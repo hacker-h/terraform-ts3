@@ -1,6 +1,6 @@
 # Configure the OpenStack Provider
 provider "openstack" {
-  # version          = "~> v1.19.0"
+  version          = "~> v1.25"
   user_name        = var.username
   domain_name      = var.domain_name
   tenant_name      = var.tenant_name
@@ -8,6 +8,14 @@ provider "openstack" {
   password         = var.password
   auth_url         = var.auth_url
   region           = var.region
+}
+
+provider "random" {
+  version = "~> v2.2"
+}
+
+provider "template" {
+  version = "~> v2.1"
 }
 
 module "vpc" {
