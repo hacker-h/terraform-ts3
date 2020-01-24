@@ -26,7 +26,7 @@ module "vpc" {
 module "instance" {
   instance_name = "ts3"
   source        = "./instance"
-  sec_id        = module.vpc.sec_id
+  sec_name        = module.vpc.sec_name
   petname       = random_pet.pet.id
 }
 
