@@ -6,9 +6,9 @@ data "openstack_images_image_v2" "ubuntu" {
 }
 
 data "template_file" "userdata" {
-  template = "${file("${path.module}/templates/userdata.yml")}"
+  template = file("${path.module}/templates/userdata.yml")
 
-  vars = {
-    #TODO add vars here
-  }
+  vars = {}
+  #TODO add vars here
 }
+

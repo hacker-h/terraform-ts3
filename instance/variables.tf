@@ -2,14 +2,15 @@ variable "flavor" {
   default = "m1.nano"
 }
 
-variable "sec_id" {
-  type = "string"
+variable "sec_name" {
+  type = string
 }
 
 variable "petname" {
-  type = "string"
+  type = string
 }
 
 variable "instance_name" {
-  type = "string"
+  type = string
 }
+

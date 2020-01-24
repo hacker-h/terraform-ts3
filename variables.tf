@@ -1,37 +1,37 @@
-variable username {
-  type = "string"
+variable "username" {
+  type = string
 }
 
-variable password {
-  type = "string"
+variable "password" {
+  type = string
 }
 
-variable domain_name {
+variable "domain_name" {
   # https://www.terraform.io/docs/providers/openstack/#domain_name
-  type = "string"
+  type = string
 }
 
-variable user_domain_name {
+variable "user_domain_name" {
   # https://www.terraform.io/docs/providers/openstack/#user_domain_name
-  type    = "string"
+  type    = string
   default = ""
 }
 
-variable tenant_name {
+variable "tenant_name" {
   # https://www.terraform.io/docs/providers/openstack/#tenant_name
-  type = "string"
+  type = string
 }
 
-variable project_id {
-  type = "string"
+variable "project_id" {
+  type = string
 }
 
-variable auth_url {
-  type = "string"
+variable "auth_url" {
+  type = string
 }
 
-variable region {
-  type    = "string"
+variable "region" {
+  type    = string
   default = "Karlsruhe"
 }
 
@@ -51,3 +51,4 @@ terraform {
     endpoint                    = "s3.eu-de.cloud-object-storage.appdomain.cloud"
   }
 }
+
