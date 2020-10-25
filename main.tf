@@ -11,7 +11,7 @@ provider "openstack" {
 }
 
 provider "random" {
-  version = "~> v2.2"
+  version = "~> 3.0.0"
 }
 
 provider "template" {
