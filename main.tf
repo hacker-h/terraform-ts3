@@ -15,7 +15,7 @@ provider "random" {
 }
 
 provider "template" {
-  version = "~> v2.1"
+  version = "~> 2.2.0"
 }
 
 module "vpc" {
